@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "dictation exercise for planete ecole",
   "author": "planete-ecole",
-  "license": "Proprietary",
+  "license": "UNLICENSED",
   "repository": "planete-ecole/dictation",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

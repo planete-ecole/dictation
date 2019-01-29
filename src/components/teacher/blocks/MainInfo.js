@@ -1,7 +1,7 @@
 import React from 'react'
 
 const component = () => (
-  <h2>student component</h2>
+  <div>infos</div>
 )
 
 export default component

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import student from './components/student'
-import teacher from './components/teacher'
+import student from './components/student/StudentComponent'
+import teacher from './components/teacher/TeacherComponent'
 
 const name = 'dictation'
 
