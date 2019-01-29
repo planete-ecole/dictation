@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import ExampleComponent from 'dictation'
+import template from 'dictation'
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+const component = () => {
+  const TeacherComponent = template.teacher
+  const StudentComponent = template.student
+  return (
+    <div>
+      <TeacherComponent />
+      <StudentComponent />
+    </div>
+  )
 }
+
+export default component
