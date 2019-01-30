@@ -1,7 +1,7 @@
-import React from 'react'
-
 import student from './components/student/StudentComponent'
 import teacher from './components/teacher/TeacherComponent'
+// needed for translations to be loaded
+import './i18n'
 
 const name = 'dictation'
 

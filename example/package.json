@@ -5,11 +5,18 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "ajv": "^6.7.0",
+    "bootstrap": "^4.2.1",
+    "connector": "git@github.com:planete-ecole/connector.git",
+    "dictation": "file:..",
+    "i18next": "^14.0.1",
+    "jquery": "^1.9.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-i18next": "^9.0.9",
     "react-scripts": "^1.1.4",
-    "dictation": "file:.."
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
