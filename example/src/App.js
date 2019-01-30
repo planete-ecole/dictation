@@ -9,7 +9,7 @@ const component = () => {
   const StudentComponent = template.student
   return (
     <div>
-      <TeacherComponent />
+      <TeacherComponent onSubmit={data => console.log(data)} />
       <StudentComponent />
     </div>
   )

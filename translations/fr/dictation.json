@@ -1,3 +1,42 @@
 {
-  "title": "titre de l'exercice"
+  "action": {
+    "add_word": "ajouter un mot",
+    "back_to_list": "retour à la liste",
+    "program_session": "programmer une session",
+    "save": "enregistrer",
+    "validate": "valider mes réponses"
+  },
+
+  "field": {
+    "instruction": "consigne",
+    "length": "durée",
+    "name": "nom de l'exercice",
+    "random": "ordre aléatoire",
+    "visibility": {
+      "available": "visible",
+      "limited": "caché"
+    }
+  },
+
+  "message": {
+    "not_available": "cette fonctionnalité n'est pas encore disponible",
+    "mark": {
+      "success_first_attempt": "Bravo, tu as réussi l'exercice du premier coup !",
+      "success_correction_done": "C'est bien, tu as tout corrigé.",
+      "error": "Tu as {{correct}} bonne(s) réponse(s)  sur {{total}}."
+    }
+  },
+
+  "placeholder": {
+    "question": "Saisissez une question"
+  },
+
+
+  "title": {
+    "description": "Informations générales",
+    "word_list": "Liste de mots",
+    "settings": "Paramètres",
+    "state": "Etat",
+    "session": "Session"
+  }
 }

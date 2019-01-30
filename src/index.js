@@ -1,5 +1,5 @@
-import student from './components/student/StudentComponent'
-import teacher from './components/teacher/TeacherComponent'
+import student from './student/StudentComponent'
+import teacher from './teacher/TeacherComponent'
 // needed for translations to be loaded
 import './i18n'
 
