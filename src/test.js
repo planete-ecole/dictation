@@ -1,7 +1,9 @@
-import ExampleComponent from './'
+import template from './'
 
-describe('ExampleComponent', () => {
+describe('template', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(template.name).toBeTruthy()
+    expect(template.student).toBeTruthy()
+    expect(template.teacher).toBeTruthy()
   })
 })

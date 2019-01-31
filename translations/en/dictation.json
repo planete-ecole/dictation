@@ -1,0 +1,41 @@
+{
+  "action": {
+    "add_word": "add a word",
+    "back_to_list": "back to the exercise list",
+    "program_session": "program a session",
+    "save": "save",
+    "validate": "validate my answers"
+  },
+
+  "field": {
+    "instruction": "instruction",
+    "length": "length",
+    "name": "exercise name",
+    "random": "random order",
+    "visibility": {
+      "available": "available",
+      "limited": "hidden"
+    }
+  },
+
+  "message": {
+    "not_available": "this feature is not available yet",
+    "mark": {
+      "success_first_attempt": "Well done, you found everything on your first attempt !",
+      "success_correction_done": "Alright, you corrected all mistakes !",
+      "error": "You have {{correct}} answers correct out of {{total}}"
+    }
+  },
+
+  "placeholder": {
+    "question": "Enter a question"
+  },
+
+  "title": {
+    "description": "exercise description",
+    "word_list": "word list",
+    "settings": "settings",
+    "state": "state",
+    "session": "session"
+  }
+}
