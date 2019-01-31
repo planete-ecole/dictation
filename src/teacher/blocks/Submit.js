@@ -4,9 +4,11 @@ import { Button } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 const component = ({onSubmit, t}) => (
-  <Button block color='primary' onClick={onSubmit}>
-    {t('action.save')}
-  </Button>
+  <div className='my-3'>
+    <Button block color='primary' onClick={onSubmit}>
+      {t('action.save')}
+    </Button>
+  </div>
 )
 
 component.propTypes = {

@@ -8,13 +8,14 @@ function onValueChange(value, questions, index, onChange) {
   onChange('questions', copy)
 }
 
-const component = ({onChange, questions}) => (
+const component = ({onChange, questions, voice}) => (
   <React.Fragment>
     {questions.map((question, index) =>
       <QuestionInput
         key={index}
-        value={question.input}
         onChange={value => onValueChange(value, questions, index, onChange)}
+        question={question}
+        voice={voice}
       />
     )}
   </React.Fragment>
@@ -22,7 +23,8 @@ const component = ({onChange, questions}) => (
 
 component.propTypes = {
   onChange: PropTypes.func.isRequired,
-  questions: PropTypes.array.isRequired
+  questions: PropTypes.array.isRequired,
+  voice: PropTypes.string
 }
 
 export default component
