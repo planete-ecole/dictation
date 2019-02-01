@@ -16,7 +16,7 @@ and give them a mark based on their results.
 Run rollup to watch the `src/` module and automatically recompile it into `dist/` whenever you make changes.
 
 ```bash
-npm start # runs rollup with watch flag
+yarn start # runs rollup with watch flag
 ```
 
 Run the `example/` create-react-app that's linked to the local version of the module.
@@ -24,7 +24,7 @@ Run the `example/` create-react-app that's linked to the local version of the mo
 ```bash
 # (in another tab)
 cd example
-npm start # runs create-react-app dev server
+yarn start # runs create-react-app dev server
 ```
 
 ## Usage
