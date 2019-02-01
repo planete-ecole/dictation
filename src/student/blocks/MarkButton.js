@@ -4,9 +4,11 @@ import { Button } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 const component = ({t}) => (
-  <Button block color='primary'>
-    {t('action.validate')}
-  </Button>
+  <div className='my-3'>
+    <Button block color='primary'>
+      {t('action.validate')}
+    </Button>
+  </div>
 )
 
 component.propTypes = {

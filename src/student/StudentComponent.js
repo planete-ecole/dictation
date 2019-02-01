@@ -27,7 +27,7 @@ class StudentComponent extends React.Component {
       <Container fluid>
         <h1>{ this.state.name }</h1>
         <p>{ this.state.instruction }</p>
-        <QuestionList questions={this.state.questions} onChange={this.onChange} />
+        <QuestionList questions={this.state.questions} onChange={this.onChange} voice={this.state.voice} />
         <MarkButton />
       </Container>
     )

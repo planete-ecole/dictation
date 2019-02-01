@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row } from 'reactstrap'
+import { withMocks } from 'connector'
 import template from 'dictation'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -21,18 +22,24 @@ class Component extends React.Component {
     const StudentComponent = template.student
 
     return (
-      <div className='bg-light py-4'>
-        <Container>
-          <Row className='border bg-white'>
-            <TeacherComponent onSubmit={data => this.setState({data})} />
-          </Row>
-          <Row className='mt-4 border bg-white'>
-            <StudentComponent data={this.state.data} />
-          </Row>
-        </Container>
-      </div>
+      <Container fluid className='bg-light py-4'>
+        <Row>
+          <div className='col-xl-6'>
+            <h2 className='text-center'>Teacher Component</h2>
+            <div className='border bg-white'>
+              <TeacherComponent onSubmit={data => this.setState({data})} />
+            </div>
+          </div>
+          <div className='col-xl-6'>
+            <h2 className='text-center'>Student Component</h2>
+            <div className='border bg-white'>
+              <StudentComponent data={this.state.data} />
+            </div>
+          </div>
+        </Row>
+      </Container>
     )
   }
 }
 
-export default Component
+export default withMocks(Component)

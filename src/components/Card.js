@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 const component = ({children, title}) => (
-  <Card className='my-4'>
+  <Card className='my-3'>
     <CardHeader>
       <h6>{title}</h6>
     </CardHeader>

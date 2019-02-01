@@ -1,23 +1,26 @@
 import React from 'react'
 import { Button, FormGroup, Input, InputGroup, InputGroupAddon } from 'reactstrap'
+import { withAudio } from 'connector'
 import PropTypes from 'prop-types'
 
-const component = ({onChange, value}) => (
+const component = ({audio, onChange, question, voice}) => (
   <FormGroup>
     <InputGroup>
       <InputGroupAddon addonType='prepend'>
-        <Button color='primary' onClick={() => console.log('play')}>
+        <Button color='primary' onClick={() => audio.play(question.answer, voice)}>
           <i className='fas fa-volume-up' />
         </Button>
       </InputGroupAddon>
-      <Input value={value} onChange={event => onChange(event.target.value)} />
+      <Input value={question.input} onChange={event => onChange(event.target.value)} />
     </InputGroup>
   </FormGroup>
 )
 
 component.propTypes = {
+  audio: PropTypes.object.isRequired,
   onChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired
+  question: PropTypes.object.isRequired,
+  voice: PropTypes.string.isRequired
 }
 
-export default component
+export default withAudio(component)

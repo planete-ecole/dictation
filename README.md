@@ -2,30 +2,36 @@
 
 > dictation exercise for planete ecole
 
-[![NPM](https://img.shields.io/npm/v/dictation.svg)](https://www.npmjs.com/package/dictation) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/planete-ecole/connector.svg?branch=master)](https://travis-ci.org/planete-ecole/connector)
 
-## Install
+## Description
+
+This library is intended to be used in the Planète École project. It enables teachers to create dictation exercises,
+a.k.a words or sentences given to the student as audio files. It lets student attempt to find the matching spelling
+and give them a mark based on their results.
+
+## Development
+
+Run rollup to watch the `src/` module and automatically recompile it into `dist/` whenever you make changes.
 
 ```bash
-npm install --save dictation
+yarn start # runs rollup with watch flag
+```
+
+Run the `example/` create-react-app that's linked to the local version of the module.
+
+```bash
+# (in another tab)
+cd example
+yarn start # runs create-react-app dev server
 ```
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'dictation'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
-```
+On the example component, use the exercise sample or create your own using the teacher component and save it to
+see it injected into the student component
 
 ## License
 
-Proprietary © [planete-ecole](https://github.com/planete-ecole)
+UNLICENSED © [planete-ecole](https://github.com/planete-ecole)
