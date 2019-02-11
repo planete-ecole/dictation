@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "bootstrap": "^4.2.0",
-    "connector": "https://github.com/planete-ecole/connector.git",
+    "connector": "../connector/",
     "i18next": "^13.0.0 || ^14.0.1",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
@@ -41,7 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^4.2.1",
-    "connector": "https://github.com/planete-ecole/connector.git",
+    "connector": "../connector/",
     "cross-env": "^5.1.4",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
