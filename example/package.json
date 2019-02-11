@@ -7,7 +7,7 @@
   "dependencies": {
     "ajv": "^6.7.0",
     "bootstrap": "^4.2.1",
-    "connector": "git@github.com:planete-ecole/connector.git",
+    "connector": "https://github.com/planete-ecole/connector",
     "dictation": "file:..",
     "i18next": "^14.0.1",
     "jquery": "^1.9.1",
